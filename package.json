@@ -1,0 +1,20 @@
+{
+  "name": "mini-redis",
+  "version": "1.0.0",
+  "description": "해시 테이블 기반 인메모리 키-값 저장소 (TTL, 무효화, AOF 영속성, HTTP API)",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node bin/server.js",
+    "demo": "node examples/demo-server.js",
+    "bench": "node bench/benchmark.js",
+    "bench:hashtable": "node bench/hashtable-bench.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "bench:batch": "node bench/batch-bench.js",
+    "demo:tx": "node examples/transaction-demo.js"
+  },
+  "license": "MIT"
+}
